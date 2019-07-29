@@ -18,3 +18,5 @@ django-admin startproject try_django
 
 ***RUN EXISTING PROJECT***
 1. pipenv install --dev
+2. pip install django-crispy-forms
+3. pip install mysqlclient
