@@ -1,0 +1,31 @@
+{% extends "users/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <!-- <div class="content-section">
+        <div class="media">
+            <div class="col-md-2 px-0">
+                <img src="{{ user.profile.image.url }}" class="img-fluid rounded-circle">
+            </div>
+            <div class="media-body align-middle">
+                <h2 class="mt-0">{{user.username}}</h2>
+                <p class="text-secondary">{{user.email}}</p>
+            </div>    
+        </div>
+    </div> -->
+    <div class="card">
+        <div class="row no-gutters">
+            <div class="col-md-2 px-0">
+                <img src="{{ user.profile.image.url }}" class="img-fluid" alt="">
+            </div>
+            <div class="col">
+                <div class="card-body px-4">
+                    <h2 class="card-title">{{user.username}}</h2>
+                    <p class="card-text">{{user.email}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer w-100 text-muted">
+            Say something about yourself
+        </div>
+  </div>
+{% endblock content %}
