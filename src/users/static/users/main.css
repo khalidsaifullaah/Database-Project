@@ -29,7 +29,16 @@ body,html{
     font-size: 40px;
     font-family: 'Anton', sans-serif;
 }
-
+.anchor{
+    text-decoration: none !important;
+    color: azure;
+    
+}
+.anchor:hover{
+    text-decoration: none !important;
+    color: azure;
+    
+}
 #demo{
     font-family: 'Inconsolata', monospace;
     font-size: 30px;
