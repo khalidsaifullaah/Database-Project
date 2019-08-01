@@ -2,6 +2,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Font links -->
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap" rel="stylesheet">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'users/main.css' %}">
+    <link rel="stylesheet" href="{% static 'users/main.css' %}">
 
     {% if title %}
         <title>One Step - {{ title }}</title>
@@ -59,7 +62,7 @@
             </div>    
           {% endfor %}
         {% endif %}
-    <br><h1 class="heading text-center bg-grey">Let's change the WORLD!</h1><br>
+    <!-- <br><h1 class="heading text-center bg-grey">Let's change the WORLD!</h1><br> -->
       <div class="container">
           
 

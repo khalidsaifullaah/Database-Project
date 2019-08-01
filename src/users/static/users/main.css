@@ -1,3 +1,58 @@
-/* .heading{
-    color: blue;
-} */
+
+.heading{
+    color: grey ;
+}
+body,html{
+    height: 100%;
+  }
+
+.bgimg{
+    background-image: url('https://seds.ca/wp-content/uploads/2014/06/earth-from-space-sunrise-desktop-wallpaper.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+
+}
+.cs{
+    font-size: 120px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+}
+
+.logo{
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+}
+
+#demo{
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+}
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+.profile{
+    background-color: white;
+    margin: 20px;
+}
