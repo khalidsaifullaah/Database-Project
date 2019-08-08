@@ -7,36 +7,40 @@ body,html{
   }
 
 .bgimg{
-    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/c6054a83510659.5d3f06978f250.jpg');   /*another way '/static/users/1.jpg' */
+    /* background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/c6054a83510659.5d3f06978f250.jpg');   another way '/static/users/1.jpg' */
+    background-image: url('/static/users/3.jpg');
     height: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
     color: white;
     font-family: 'Dancing Script', cursive;
-    backface-visibility: hidden;
-    animation: slideBG 30s linear infinite 3s;
-    animation-timing-function: linear;
+    /* backface-visibility: hidden; */
+    /* animation: slideBG 30s infinite; */
+    /* animation-timing-function: ease-in; */
 
 }
 
-@keyframes slideBG{
+/* @keyframes slideBG{
     0% {
-        background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/46260f83510659.5d3f06978dab1.jpg');
+        background-image: url('/static/users/1.jpg');
     }
-    25% {
+    40% {
         background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/84cabc83510659.5d3f06978b95d.jpg');
     }
-    50% {
+    40.01% {
         background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/6b97b183510659.5d3f06978aedd.jpg');
     }
-    75% {
+    80% {
         background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/72f30e83510659.5d3f06978e658.jpg');
+    }
+    80.01% {
+        background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/46260f83510659.5d3f06978dab1.jpg');
     }
     100% {
         background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a0000a83070851.5d30b24120a09.jpg');
     }
-}
+} */
 .cs{
     font-size: 120px;
 }
@@ -49,6 +53,7 @@ body,html{
 .topleft {
     position: absolute;
     top: 0;
+    animation: slideBG 2s;
 }
 
 /* .logo{

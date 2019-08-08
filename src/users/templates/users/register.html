@@ -1,6 +1,12 @@
 {% extends "users/base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
+{% block css_link %}
+<link rel="stylesheet" href="{% static 'users/main.css' %}">
+{% endblock %}
+
 {% block content %}
+<div class="heading"><h1>sdgsg</h1></div>
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}

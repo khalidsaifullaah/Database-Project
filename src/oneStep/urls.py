@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import path
+from django.urls import path,include
 from users import views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ideas/', include("ideas.urls")),
     path('', user_views.comingSoon,name='comingSoon'),
     path('register/',user_views.register,name='register'),
     path('home/',user_views.home,name='home'),

@@ -1,5 +1,10 @@
 {% extends "users/base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
+{% block css_link %}
+<link rel="stylesheet" href="{% static 'users/main.css' %}">
+{% endblock %}
+    
 {% block content %}
     <!-- <div class="content-section">
         <div class="media">

@@ -1,0 +1,35 @@
+{% extends "users/base.html" %}
+{% load static %}
+{% block css_link %}
+<link rel="stylesheet" href="{% static 'ideas/ideas.css' %}">
+{% endblock %}
+{% block content %}
+<br>
+{% for idea in ideas %}
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="media ">
+        {% if idea.thumbnail %}
+        <img class="align-self-start idea-img mr-3" src="{{ idea.thumbnail.url }}" alt="Generic placeholder image">
+        {% else %}
+        <!-- <img class="idea-img" src="{% static 'ideas/1.jpg' %}" alt=""> -->
+        {% endif %}
+        <div class="media-body">
+          {% for catagory in idea.catagory.all %}
+          <small><a href="">{{catagory}} |</a></small>
+          {% endfor %}
+          <h5 class="mt-0"><a href="{% url 'idea-detail' idea.id %}">{{idea.title}}</a></h5>
+          <p>{{idea.description|truncatewords:50}}</p>
+          <small class="text-muted">
+            By <a class="ml-2" href="{% url 'profile' %}">{{idea.author}} | </a>
+          </small>
+          <small class="text-muted">{{ idea.date_posted|date:"F d, Y" }}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
